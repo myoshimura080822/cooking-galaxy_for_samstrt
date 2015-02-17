@@ -1,0 +1,53 @@
+DEPENDENCIES
+  database
+  galaxy
+    path: .
+    metadata: true
+  mercurial
+  mysql
+  postgresql
+  python
+
+GRAPH
+  apt (2.6.1)
+  build-essential (2.0.6)
+  chef-sugar (2.5.0)
+  chef_handler (1.1.6)
+  database (4.0.2)
+    postgresql (>= 1.0.0)
+  galaxy (0.6.4)
+    database (>= 0.0.0)
+    mercurial (>= 0.0.0)
+    mysql (>= 0.0.0)
+    postgresql (>= 0.0.0)
+    python (>= 0.0.0)
+    vim (>= 0.0.0)
+    yum (>= 0.0.0)
+  mercurial (2.0.4)
+    build-essential (>= 0.0.0)
+    python (>= 0.0.0)
+    windows (>= 0.0.0)
+  mysql (6.0.13)
+    smf (>= 0.0.0)
+    yum-mysql-community (>= 0.0.0)
+  openssl (2.0.2)
+    chef-sugar (>= 0.0.0)
+  postgresql (3.4.14)
+    apt (>= 1.9.0)
+    build-essential (>= 0.0.0)
+    openssl (>= 0.0.0)
+  python (1.4.6)
+    build-essential (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  rbac (1.0.2)
+  smf (2.2.1)
+    rbac (>= 1.0.1)
+    resource-control (>= 0.0.0)
+  vim (1.1.2)
+  windows (1.34.2)
+    chef_handler (>= 0.0.0)
+  yum (3.5.2)
+  yum-epel (0.5.1)
+    yum (~> 3.0)
+  yum-mysql-community (0.1.12)
+    yum (>= 3.0)

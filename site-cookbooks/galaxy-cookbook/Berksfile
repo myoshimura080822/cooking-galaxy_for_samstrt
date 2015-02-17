@@ -1,0 +1,10 @@
+#source 'https://api.berkshelf.com'
+source "https://supermarket.getchef.com"
+
+cookbook "python"
+cookbook "mercurial"
+cookbook "database"
+cookbook "mysql"
+cookbook "postgresql"
+
+metadata
