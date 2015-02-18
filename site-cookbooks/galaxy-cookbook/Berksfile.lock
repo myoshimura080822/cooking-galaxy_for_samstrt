@@ -1,12 +1,11 @@
 DEPENDENCIES
-  database
   galaxy
     path: .
     metadata: true
   mercurial
-  mysql
-  postgresql
   python
+  vim
+  yum
 
 GRAPH
   apt (2.6.1)
@@ -15,7 +14,7 @@ GRAPH
   chef_handler (1.1.6)
   database (4.0.2)
     postgresql (>= 1.0.0)
-  galaxy (0.6.4)
+  galaxy (0.6.6)
     database (>= 0.0.0)
     mercurial (>= 0.0.0)
     mysql (>= 0.0.0)
@@ -32,7 +31,7 @@ GRAPH
     yum-mysql-community (>= 0.0.0)
   openssl (2.0.2)
     chef-sugar (>= 0.0.0)
-  postgresql (3.4.14)
+  postgresql (3.4.16)
     apt (>= 1.9.0)
     build-essential (>= 0.0.0)
     openssl (>= 0.0.0)
@@ -40,14 +39,15 @@ GRAPH
     build-essential (>= 0.0.0)
     yum-epel (>= 0.0.0)
   rbac (1.0.2)
+  resource-control (0.1.1)
   smf (2.2.1)
     rbac (>= 1.0.1)
     resource-control (>= 0.0.0)
   vim (1.1.2)
   windows (1.34.2)
     chef_handler (>= 0.0.0)
-  yum (3.5.2)
+  yum (3.3.2)
   yum-epel (0.5.1)
     yum (~> 3.0)
-  yum-mysql-community (0.1.12)
+  yum-mysql-community (0.1.13)
     yum (>= 3.0)

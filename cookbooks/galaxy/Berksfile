@@ -1,10 +1,8 @@
-#source 'https://api.berkshelf.com'
-source "https://supermarket.getchef.com"
+source 'http://api.berkshelf.com'
 
+cookbook "yum"
 cookbook "python"
 cookbook "mercurial"
-cookbook "database"
-cookbook "mysql"
-cookbook "postgresql"
+cookbook "vim"
 
 metadata
