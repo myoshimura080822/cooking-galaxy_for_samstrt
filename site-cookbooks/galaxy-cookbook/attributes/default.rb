@@ -1,6 +1,3 @@
-case platform
-when "centos"
-
     # System account info
     default[:galaxy][:user]      = "galaxy"
     default[:galaxy][:group]     = "galaxy"
@@ -12,7 +9,7 @@ when "centos"
     # overwrite run.sh (for old version or customize run.sh)
     default[:galaxy][:overwrite_run_sh] = false
     # overwrite fetch_eggs.py (for old version or customize fetch_eggs.py)
-    default[:galaxy][:overwrite_fetch_eggs_py] = true
+    default[:galaxy][:overwrite_fetch_eggs_py] = false
 
     # path to galaxy systems
     # if you want to use latest version , set reference to 'tip'
@@ -30,9 +27,11 @@ when "centos"
     # with tool shed, for the galaxy-admin's settins
     default[:galaxy][:shedtools_path]       = "#{galaxy[:home]}/shed_tools"
     default[:galaxy][:shedtools_config]     = "#{galaxy[:path]}/shed_tool_conf.xml"
-
+case platform
+when "centos"
     default[:galaxy][:initfile]  = "/etc/init.d/galaxy" if( platform_version.to_f < 7.0)
-
+when "ubuntu"
+    default[:galaxy][:initfile]  = "/etc/init.d/galaxy"
 end
 
 # repository 

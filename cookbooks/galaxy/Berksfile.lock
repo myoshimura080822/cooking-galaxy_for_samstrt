@@ -14,7 +14,7 @@ GRAPH
   chef_handler (1.1.6)
   database (4.0.2)
     postgresql (>= 1.0.0)
-  galaxy (0.6.6)
+  galaxy (0.6.7)
     database (>= 0.0.0)
     mercurial (>= 0.0.0)
     mysql (>= 0.0.0)
