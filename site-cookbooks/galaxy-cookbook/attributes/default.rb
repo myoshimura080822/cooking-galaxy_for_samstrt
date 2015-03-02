@@ -9,11 +9,11 @@
     # overwrite run.sh (for old version or customize run.sh)
     default[:galaxy][:overwrite_run_sh] = false
     # overwrite fetch_eggs.py (for old version or customize fetch_eggs.py)
-    default[:galaxy][:overwrite_fetch_eggs_py] = false
+    default[:galaxy][:overwrite_fetch_eggs_py] = true
 
     # path to galaxy systems
     # if you want to use latest version , set reference to 'tip'
-    default[:galaxy][:reference] = "release_2014.08.11"
+    default[:galaxy][:reference] = "latest_2014.08.11"
     default[:galaxy][:path]      = "#{galaxy[:home]}/galaxy-dist"
 
     # normal service
